@@ -262,8 +262,8 @@ class ExercisePage2 extends StatelessWidget {
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Colors.blue, // Set border color here
-                      width: 2, // Set border width here
+                      color: Colors.blue,
+                      width: 2,
                     ),
                   ),
                   padding:
