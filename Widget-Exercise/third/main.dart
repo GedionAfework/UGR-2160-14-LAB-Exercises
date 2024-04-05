@@ -9,7 +9,9 @@ class ExercisePage3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
         backgroundColor: Colors.grey[300],
         appBar: AppBar(
           title: const Row(
@@ -212,6 +214,8 @@ class ExercisePage3 extends StatelessWidget {
               ),
             )
           ],
-        ));
+        ),
+      ),
+    );
   }
 }
