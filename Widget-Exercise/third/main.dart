@@ -28,11 +28,17 @@ class ExercisePage3 extends StatelessWidget {
         body: Column(
           children: [
             Container(
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(35.0)),
+              ),
               margin: const EdgeInsets.all(20),
               child: Column(
                 children: [
                   Container(
-                      color: Colors.white,
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                      ),
                       child: Column(
                         children: [
                           Container(
@@ -70,7 +76,7 @@ class ExercisePage3 extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Order Date'),
-                              Text('20 july 2024 5:00 pm')
+                              Text('20 July 2024 5:00 pm')
                             ],
                           )
                         ],
@@ -79,8 +85,11 @@ class ExercisePage3 extends StatelessWidget {
               ),
             ),
             Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                ),
                 margin: const EdgeInsets.all(20),
-                color: Colors.white,
                 child: Column(
                   children: [
                     const Align(
@@ -113,7 +122,7 @@ class ExercisePage3 extends StatelessWidget {
                           ],
                         ),
                         const Column(
-                          children: [Text('Color: yellow'), Text('Qty: 1')],
+                          children: [Text('Color: Yellow'), Text('Qty: 1')],
                         )
                       ],
                     ),
@@ -129,7 +138,7 @@ class ExercisePage3 extends StatelessWidget {
                                     width: 50, height: 50)),
                             const Column(
                               children: [
-                                Text('Hoddie Rose',
+                                Text('Hoodie Rose',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 15)),
@@ -150,7 +159,10 @@ class ExercisePage3 extends StatelessWidget {
                   ],
                 )),
             Container(
-                color: Colors.white,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                ),
                 margin: const EdgeInsets.all(20),
                 child: const Column(
                   children: [
@@ -192,8 +204,11 @@ class ExercisePage3 extends StatelessWidget {
                   ],
                 )),
             Container(
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(15.0)),
+              ),
               padding: const EdgeInsets.all(10),
-              color: Colors.white,
               margin: const EdgeInsets.all(20),
               child: const Column(
                 children: [
