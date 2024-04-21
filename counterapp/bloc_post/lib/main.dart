@@ -37,7 +37,6 @@ class Post {
 Future<List<Post>> fetchPost() async {
   final response =
       await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
-
   if (response.statusCode == 200) {
     final List<dynamic> body = jsonDecode(response.body);
     return body.map((dynamic item) => Post.fromJson(item)).toList();
@@ -60,7 +59,6 @@ class PostBloc extends Bloc<PostEvent, List<Post>> {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -73,7 +71,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -40,12 +40,10 @@ class PostProvider with ChangeNotifier {
   bool _isLoading = false;
   bool _hasError = false;
   String _errorMessage = '';
-
   List<Post> get posts => _posts;
   bool get isLoading => _isLoading;
   bool get hasError => _hasError;
   String get errorMessage => _errorMessage;
-
   Future<void> fetchPosts() async {
     _isLoading = true;
     notifyListeners();
@@ -53,7 +51,6 @@ class PostProvider with ChangeNotifier {
     try {
       final response = await http
           .get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
-
       if (response.statusCode == 200) {
         List<dynamic> body = jsonDecode(response.body);
         _posts = body.map((dynamic item) => Post.fromJson(item)).toList();
@@ -65,7 +62,6 @@ class PostProvider with ChangeNotifier {
       _hasError = true;
       _errorMessage = 'An error occurred: $e';
     }
-
     _isLoading = false;
     notifyListeners();
   }
